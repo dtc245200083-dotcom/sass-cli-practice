@@ -1,25 +1,11 @@
-@use 'sass:color';
 @use '../abstracts/variables' as *;
 
-.btn {
-  display: inline-block;
-  padding: 10px 24px;
-  border-radius: 5px;
-  text-decoration: none;
+.badge-onsale, .btn-preview {
+  background-color: $color-level-2; // Nền bậc 2 (#00B2EF)
+  color: $text-color-light;
+  padding: 8px 16px;
+  border-radius: 4px;
   border: none;
-  cursor: pointer;
   font-weight: bold;
-
-  &-primary {
-    background-color: $primary-color;
-    color: white;
-    &:hover {
-      background-color: color.adjust($primary-color, $lightness: -10%);
-    }
-  }
-
-  &-secondary {
-    background-color: $secondary-color;
-    color: white;
-  }
+  display: inline-block;
 }

@@ -5,7 +5,8 @@
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  color: #333333;
+  color: #000000;
+  background-color: #8DD7F7;
 }
 
 .container {
@@ -15,84 +16,48 @@ body {
 }
 
 .header {
-  background-color: #1a202c;
-  color: white;
-  padding-bottom: 60px;
+  background-color: #00BFF2;
+  color: #000000;
+  padding: 20px 0 40px;
 }
 .header .nav {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 0;
 }
 .header .nav .logo {
   font-size: 24px;
   font-weight: bold;
-  color: white;
+  color: #000000;
   text-decoration: none;
 }
 .header .nav .nav-list {
   display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
   list-style: none;
   gap: 20px;
 }
 .header .nav .nav-list a {
-  color: white;
+  color: #000000;
   text-decoration: none;
-}
-.header .nav .nav-list a:hover {
-  color: #007bff;
-}
-@media (max-width: 768px) {
-  .header .nav {
-    flex-direction: column;
-    gap: 15px;
-  }
-}
-.header .hero {
-  text-align: center;
-  margin-top: 40px;
-}
-.header .hero h1 {
-  font-size: 36px;
-  margin-bottom: 15px;
-}
-.header .hero p {
-  font-size: 18px;
-  color: #cbd5e0;
-  margin-bottom: 25px;
+  font-weight: bold;
 }
 
 .footer {
-  background-color: #1a202c;
-  color: white;
+  background-color: #C6E9FA;
+  color: #000000;
   padding: 30px 0;
   text-align: center;
+  border-top: 1px solid #B2E2F9;
 }
 
-.btn {
-  display: inline-block;
-  padding: 10px 24px;
-  border-radius: 5px;
-  text-decoration: none;
+.badge-onsale, .btn-preview {
+  background-color: #00B2EF;
+  color: #ffffff;
+  padding: 8px 16px;
+  border-radius: 4px;
   border: none;
-  cursor: pointer;
   font-weight: bold;
-}
-.btn-primary {
-  background-color: #007bff;
-  color: white;
-}
-.btn-primary:hover {
-  background-color: rgb(0%, 38.5882352941%, 80%);
-}
-.btn-secondary {
-  background-color: #6c757d;
-  color: white;
+  display: inline-block;
 }
 
 .products {
@@ -114,7 +79,7 @@ body {
   }
 }
 .products .product-card {
-  border: 1px solid #e2e8f0;
+  border: 1px solid #B2E2F9;
   border-radius: 8px;
   padding: 25px;
   text-align: center;
@@ -129,7 +94,7 @@ body {
 }
 
 .stats {
-  background-color: #f8f9fa;
+  background-color: #C6E9FA;
   padding: 50px 0;
 }
 .stats .stats-grid {
@@ -151,11 +116,11 @@ body {
 .stats .stat-item .stat-number {
   font-size: 36px;
   font-weight: bold;
-  color: #007bff;
+  color: #00ADEE;
 }
 .stats .stat-item .stat-label {
   font-size: 16px;
-  color: #333333;
+  color: #000000;
 }
 
 /*# sourceMappingURL=styles.css.map */

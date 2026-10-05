@@ -1,9 +1,24 @@
-$primary-color: #007bff;
-$secondary-color: #6c757d;
-$dark-color: #1a202c;
-$light-color: #f8f9fa;
-$text-color: #333333;
-$border-color: #e2e8f0;
+// ==========================================
+// MONOCHROMATIC PALETTE (Màu đơn tông xanh)
+// ==========================================
+$color-level-1: #00ADEE; // Màu chủ đạo (Primary)
+$color-level-2: #00B2EF; // Nổi bật ON SALE/PREVIEW
+$color-level-3: #00B9F1;
+$color-level-4: #00BFF2; // Màu nền chính (Header/Hero)
+$color-level-5: #33C7F4;
+$color-level-6: #66D0F6;
+$color-level-7: #8DD7F7; // Màu nền phần nội dung
+$color-level-8: #B2E2F9;
+$color-level-9: #C6E9FA; // Màu nền Footer
 
-$font-main: Arial, sans-serif;
+$text-color-dark: #000000;
+$text-color-light: #ffffff;
 $breakpoint-mobile: 768px;
+
+// Bổ sung các biến ánh xạ để tương thích với các component:
+$primary-color: $color-level-1;
+$secondary-color: $color-level-2;
+$dark-color: $color-level-4;
+$light-color: $color-level-9;
+$text-color: $text-color-dark;
+$border-color: $color-level-8; // <-- CỰC KỲ QUAN TRỌNG: Khai báo biến này

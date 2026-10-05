@@ -7,5 +7,6 @@
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  color: $text-color;
+  color: $text-color-dark; // Giữ màu chữ đen cho toàn bộ trang
+  background-color: $color-level-7; // Nền nội dung chính (Bước 4)
 }

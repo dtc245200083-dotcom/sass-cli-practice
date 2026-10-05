@@ -1,55 +1,32 @@
 @use '../abstracts/variables' as *;
-@use '../abstracts/mixins' as *;
 
 .header {
-  background-color: $dark-color;
-  color: white;
-  padding-bottom: 60px;
+  background-color: $color-level-4; // Nền màu bậc 4 (#00BFF2)
+  color: $text-color-dark;
+  padding: 20px 0 40px;
 
   .nav {
-    @include flex-center(row, space-between, center);
-    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
     .logo {
       font-size: 24px;
       font-weight: bold;
-      color: white;
+      color: $text-color-dark;
       text-decoration: none;
     }
 
     .nav-list {
-      @include flex-center;
+      display: flex;
       list-style: none;
       gap: 20px;
 
       a {
-        color: white;
+        color: $text-color-dark;
         text-decoration: none;
-        &:hover {
-          color: $primary-color;
-        }
+        font-weight: bold;
       }
-    }
-
-    @include mobile {
-      flex-direction: column;
-      gap: 15px;
-    }
-  }
-
-  .hero {
-    text-align: center;
-    margin-top: 40px;
-
-    h1 {
-      font-size: 36px;
-      margin-bottom: 15px;
-    }
-
-    p {
-      font-size: 18px;
-      color: #cbd5e0;
-      margin-bottom: 25px;
     }
   }
 }

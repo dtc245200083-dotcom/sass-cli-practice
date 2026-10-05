@@ -3,73 +3,36 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Landing Page - Full SASS Architecture</title>
+  <title>Phối màu Đơn tông (Monochromatic Palette)</title>
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
 
-  <!-- 1. Navigation & Header -->
+  <!-- Header & Nav (Màu bậc 4) -->
   <header class="header">
-    <nav class="nav container">
-      <a href="#" class="logo">BrandLogo</a>
+    <div class="container nav">
+      <a href="#" class="logo">CodeGym Store</a>
       <ul class="nav-list">
-        <li><a href="#products">Sản phẩm</a></li>
-        <li><a href="#stats">Thống kê</a></li>
-        <li><a href="#footer">Liên hệ</a></li>
+        <li><a href="#">Trang chủ</a></li>
+        <li><a href="#">Sản phẩm</a></li>
       </ul>
-    </nav>
-    <div class="hero container">
-      <h1>Chào mừng đến với Landing Page</h1>
-      <p>Tối ưu hóa mã nguồn CSS của bạn dễ dàng cùng SASS CLI.</p>
-      <a href="#products" class="btn btn-primary">Khám phá ngay</a>
     </div>
   </header>
 
-  <!-- 2. Sản phẩm nổi bật (Featured Products) -->
-  <section id="products" class="products container">
-    <h2 class="section-title">Sản phẩm nổi bật</h2>
-    <div class="product-grid">
-      <div class="card product-card">
-        <h3>Sản phẩm A</h3>
-        <p>Mô tả chi tiết sản phẩm A với tính năng nổi bật.</p>
-        <button class="btn btn-secondary">Mua ngay</button>
-      </div>
-      <div class="card product-card">
-        <h3>Sản phẩm B</h3>
-        <p>Mô tả chi tiết sản phẩm B với tính năng nổi bật.</p>
-        <button class="btn btn-secondary">Mua ngay</button>
-      </div>
-      <div class="card product-card">
-        <h3>Sản phẩm C</h3>
-        <p>Mô tả chi tiết sản phẩm C với tính năng nổi bật.</p>
-        <button class="btn btn-secondary">Mua ngay</button>
-      </div>
+  <!-- Nội dung (Màu bậc 7) -->
+  <main class="container" style="padding: 40px 0;">
+    <h2>Sản phẩm nổi bật</h2>
+    <div class="card" style="padding: 20px; background: white; border-radius: 8px; margin-top: 20px;">
+      <h3>Áo phông Lập trình viên</h3>
+      <p>Mô tả chi tiết sản phẩm chất lượng cao.</p>
+      <span class="badge-onsale">ON SALE</span>
+      <button class="btn-preview">PREVIEW</button>
     </div>
-  </section>
+  </main>
 
-  <!-- 3. Số liệu thống kê (Statistics) -->
-  <section id="stats" class="stats">
-    <div class="container stats-grid">
-      <div class="stat-item">
-        <span class="stat-number">10K+</span>
-        <span class="stat-label">Khách hàng</span>
-      </div>
-      <div class="stat-item">
-        <span class="stat-number">99%</span>
-        <span class="stat-label">Hài lòng</span>
-      </div>
-      <div class="stat-item">
-        <span class="stat-number">24/7</span>
-        <span class="stat-label">Hỗ trợ</span>
-      </div>
-    </div>
-  </section>
-
-  <!-- 4. Footer -->
-  <footer id="footer" class="footer">
-    <div class="container footer-content">
-      <p>&copy; 2026 Landing Page. All rights reserved.</p>
-    </div>
+  <!-- Footer (Màu bậc 9) -->
+  <footer class="footer">
+    <p>&copy; 2026 CodeGym Demo - Monochromatic Color Theme.</p>
   </footer>
 
 </body>
