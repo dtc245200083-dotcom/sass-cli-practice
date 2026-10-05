@@ -1,0 +1,17 @@
+@use 'variables' as *;
+
+body {
+  font-family: $font-stack;
+  color: $text-color;
+  background-color: #f4f4f4;
+}
+
+.card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+
+  h1 {
+    color: $primary-color;
+  }
+}
