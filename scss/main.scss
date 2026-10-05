@@ -1,6 +1,7 @@
-@import "abstracts/variables";
-@import "abstracts/mixins";
-@import "base/global";
-@import "layout/container";
-@import "components/buttons";
-@import "components/cards";
+@use 'abstracts/variables';
+@use 'abstracts/mixins';
+@use 'base/global';
+@use 'base/typography';
+@use 'layout/container';
+@use 'components/buttons';
+@use 'components/cards';
