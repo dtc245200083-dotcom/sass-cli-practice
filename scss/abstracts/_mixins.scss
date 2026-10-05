@@ -1,14 +1,15 @@
 @use 'sass:math';
 @use 'variables' as *;
 
-// Mixin chia cột theo phần trăm chuẩn Modern Sass
-@mixin make-col($span) {
-  width: math.percentage(math.div($span, $grid-columns));
+@mixin flex-center($direction: row, $justify: center, $align: center) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align;
 }
 
-// Mixin Media Query cho Mobile
 @mixin mobile {
-  @media only screen and (max-width: $breakpoint-mobile) {
+  @media (max-width: $breakpoint-mobile) {
     @content;
   }
 }

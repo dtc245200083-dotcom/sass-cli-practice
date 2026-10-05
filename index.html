@@ -1,22 +1,76 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Responsive Grid Layout</title>
+  <title>Landing Page - Full SASS Architecture</title>
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-  <div class="row">
-    <div class="col-4 col-s-12">
-      <div class="card">Card 1</div>
+
+  <!-- 1. Navigation & Header -->
+  <header class="header">
+    <nav class="nav container">
+      <a href="#" class="logo">BrandLogo</a>
+      <ul class="nav-list">
+        <li><a href="#products">Sản phẩm</a></li>
+        <li><a href="#stats">Thống kê</a></li>
+        <li><a href="#footer">Liên hệ</a></li>
+      </ul>
+    </nav>
+    <div class="hero container">
+      <h1>Chào mừng đến với Landing Page</h1>
+      <p>Tối ưu hóa mã nguồn CSS của bạn dễ dàng cùng SASS CLI.</p>
+      <a href="#products" class="btn btn-primary">Khám phá ngay</a>
     </div>
-    <div class="col-4 col-s-6">
-      <div class="card">Card 2</div>
+  </header>
+
+  <!-- 2. Sản phẩm nổi bật (Featured Products) -->
+  <section id="products" class="products container">
+    <h2 class="section-title">Sản phẩm nổi bật</h2>
+    <div class="product-grid">
+      <div class="card product-card">
+        <h3>Sản phẩm A</h3>
+        <p>Mô tả chi tiết sản phẩm A với tính năng nổi bật.</p>
+        <button class="btn btn-secondary">Mua ngay</button>
+      </div>
+      <div class="card product-card">
+        <h3>Sản phẩm B</h3>
+        <p>Mô tả chi tiết sản phẩm B với tính năng nổi bật.</p>
+        <button class="btn btn-secondary">Mua ngay</button>
+      </div>
+      <div class="card product-card">
+        <h3>Sản phẩm C</h3>
+        <p>Mô tả chi tiết sản phẩm C với tính năng nổi bật.</p>
+        <button class="btn btn-secondary">Mua ngay</button>
+      </div>
     </div>
-    <div class="col-4 col-s-6">
-      <div class="card">Card 3</div>
+  </section>
+
+  <!-- 3. Số liệu thống kê (Statistics) -->
+  <section id="stats" class="stats">
+    <div class="container stats-grid">
+      <div class="stat-item">
+        <span class="stat-number">10K+</span>
+        <span class="stat-label">Khách hàng</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-number">99%</span>
+        <span class="stat-label">Hài lòng</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-number">24/7</span>
+        <span class="stat-label">Hỗ trợ</span>
+      </div>
     </div>
-  </div>
+  </section>
+
+  <!-- 4. Footer -->
+  <footer id="footer" class="footer">
+    <div class="container footer-content">
+      <p>&copy; 2026 Landing Page. All rights reserved.</p>
+    </div>
+  </footer>
+
 </body>
 </html>
