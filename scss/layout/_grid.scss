@@ -1,0 +1,32 @@
+@use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
+
+.row {
+  &::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+}
+
+[class*="col-"] {
+  float: left;
+  padding: 15px;
+  width: 100%; // Mặc định full width
+}
+
+// Tạo các lớp col-1 đến col-12 tự động
+@for $i from 1 through $grid-columns {
+  .col-#{$i} {
+    @include make-col($i);
+  }
+}
+
+// Responsive cho Mobile
+@include mobile {
+  @for $i from 1 through $grid-columns {
+    .col-s-#{$i} {
+      @include make-col($i);
+    }
+  }
+}

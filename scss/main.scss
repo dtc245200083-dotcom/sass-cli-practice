@@ -1,7 +1,5 @@
 @use 'abstracts/variables';
 @use 'abstracts/mixins';
 @use 'base/global';
-@use 'base/typography';
-@use 'layout/container';
-@use 'components/buttons';
+@use 'layout/grid';
 @use 'components/cards';

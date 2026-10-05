@@ -1,15 +1,14 @@
+@use 'sass:math';
 @use 'variables' as *;
 
-@mixin button-style($bg-color) {
-  background: $bg-color;
-  color: white;
-  padding: $padding-standard;
-  border-radius: 5px;
+// Mixin chia cột theo phần trăm chuẩn Modern Sass
+@mixin make-col($span) {
+  width: math.percentage(math.div($span, $grid-columns));
 }
 
-@mixin box-style {
-  background: white;
-  padding: 15px;
-  border-radius: 10px;
-  box-shadow: $box-shadow-default;
+// Mixin Media Query cho Mobile
+@mixin mobile {
+  @media only screen and (max-width: $breakpoint-mobile) {
+    @content;
+  }
 }
